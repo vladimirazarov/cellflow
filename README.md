@@ -20,7 +20,7 @@ To compile the program, follow these steps:
 2. Navigate to the root directory of the project where the `Makefile` is located.
 3. Run the following command:
 
-```bash
+```
 make
 ```
 
