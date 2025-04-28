@@ -13,7 +13,11 @@ $(TARGET): $(SOURCES)
 	$(CXX) $(CXXFLAGS) $(SOURCES) -o $(TARGET)
 
 clean:
-	$(RM) $(TARGET) $(ZIPFILE)
+	$(RM) $(TARGET) $(ZIPFILE) out.txt
 
 zip:
-	zip $(ZIPFILE) -r src doc LICENSE Makefile README.md
+	zip $(ZIPFILE) -r src scripts doc LICENSE Makefile README.md .gitignore
+
+# Optional: Add a target to run the python script
+plot:
+	python scripts/gen.py

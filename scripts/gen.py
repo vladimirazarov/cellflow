@@ -2,8 +2,9 @@ import matplotlib.pyplot as plt
 import os
 import numpy as np
 
-current_directory = os.path.dirname(os.path.abspath(__file__))
-file_path = os.path.join(current_directory, "out.txt")
+current_script_directory = os.path.dirname(os.path.abspath(__file__))
+project_root_directory = os.path.dirname(current_script_directory)
+file_path = os.path.join(project_root_directory, "out.txt")
 
 x_values = []
 y_values = []
